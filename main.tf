@@ -1,10 +1,10 @@
 resource "google_compute_instance" "novavm" {
-  name         = var.nomemaquina
-  machine_type = var.flavormaquina
-  zone         = var.maquinazona
+  name         = ${var.nomemaquina}
+  machine_type = ${var.flavormaquina}
+  zone         = ${var.maquinazona}
   boot_disk {
     initialize_params {
-      image = var.sodisco
+      image = ${var.sodisco}
     }
   }
   network_interface {
