@@ -29,5 +29,5 @@ output "Internal_IP" {
 }
 
 output "Platform" {
-    value = google_compute_instance.novavm.cpu_plaform
+    value = google_compute_instance.novavm.cpu_platform
 }
